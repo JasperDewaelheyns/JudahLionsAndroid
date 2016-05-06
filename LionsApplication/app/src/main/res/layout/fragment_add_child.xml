@@ -1,0 +1,122 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.judah.jasperdewaelheyns.lionsapplication.AddChildFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/add_lion"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tv_fName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_add"
+            android:layout_marginBottom="20dp"
+            android:text="@string/child_fName"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_lName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_fName"
+            android:layout_marginBottom="20dp"
+            android:text="@string/child_lName"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_pName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_lName"
+            android:layout_marginBottom="20dp"
+            android:text="@string/child_pName"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pName"
+            android:layout_marginBottom="20dp"
+            android:text="@string/parent_phoneNumber"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_bday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_phoneNumber"
+            android:layout_marginBottom="20dp"
+            android:text="@string/child_bday"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btn_add_lion"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@id/tv_bday"
+            android:text="@android:string/ok" />
+
+        <EditText
+            android:id="@+id/et_fName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_add"
+            android:inputType="text"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/tv_phoneNumber" />
+
+        <EditText
+            android:id="@+id/et_lName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_fName"
+            android:inputType="text"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/tv_phoneNumber" />
+
+        <EditText
+            android:id="@+id/et_pName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_lName"
+            android:inputType="text"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/tv_phoneNumber" />
+
+        <EditText
+            android:id="@+id/et_phNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pName"
+            android:layout_marginLeft="5dp"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:layout_toEndOf="@+id/tv_phoneNumber" />
+
+        <EditText
+            android:id="@+id/et_bday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_phoneNumber"
+            android:layout_marginLeft="5dp"
+            android:inputType="date"
+            android:hint="@string/dateFormat"
+            android:layout_toEndOf="@+id/tv_phoneNumber" />
+    </RelativeLayout>
+
+</FrameLayout>
